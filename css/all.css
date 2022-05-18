@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,4 +47,123 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+*, *::brfore, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.plat_h {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.plat_d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.plat_d li {
+  width: 33.33333%;
+  text-align: center;
+}
+.plat_d li img {
+  width: 90px;
+  height: 90px;
+}
+.plat_d li h3 {
+  font-size: 24px;
+  margin: 24px 0 24px 0;
+}
+.plat_d li p {
+  font-size: 16px;
+  color: #747474;
+  line-height: 1.4;
+}
+
+.role {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+.role h2 {
+  font-size: 32px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.role p {
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.role .role_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.role .role_list li {
+  text-align: center;
+  margin-right: 16px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px 7px #00000014;
+          box-shadow: 1px 2px 7px #00000014;
+  overflow: hidden;
+}
+.role .role_list li img {
+  width: 260px;
+  height: 260px;
+}
+.role .role_list li h4 {
+  color: #56C4C5;
+  font-size: 16px;
+  margin: 16px 0 16px 0;
+}
+.role .role_list li p {
+  font-size: 16px;
+  line-height: 1.5;
 }
