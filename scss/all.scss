@@ -124,6 +124,7 @@ body {
     }
     .role_list {
         display:flex;
+        justify-content: space-around;
         li {
             text-align: center;
             margin-right: 16px;
@@ -153,7 +154,7 @@ body {
     padding-right:139px;
     padding-left:139px;
     .feature_list {
-        width: 60%;
+        width: 50%;
         ul {
         display:flex;
         flex-wrap:wrap;
@@ -181,7 +182,7 @@ body {
     }
     }
     .feature_text {
-        width: 40%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -235,8 +236,9 @@ body {
     }
     ul{
         display:flex;
+        justify-content: center;
         li{
-            width:33.3333%;
+            width:22.6666%;
             // max-width:352px;
             // max-height: 248px;
             margin-right: 16px;
