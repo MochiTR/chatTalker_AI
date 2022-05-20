@@ -160,6 +160,9 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
+  padding-right: 139px;
+  padding-left: 139px;
 }
 .plat_d li {
   width: 33.33333%;
@@ -232,8 +235,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 139px;
+  padding-left: 139px;
 }
 .feature .feature_list {
   width: 60%;

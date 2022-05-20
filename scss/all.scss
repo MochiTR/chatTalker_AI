@@ -83,9 +83,10 @@ body {
 .plat_d {
     display:flex;
     justify-content: space-around;
-
+    width:100%;
+    padding-right:139px;
+    padding-left: 139px;
     li{
-
         width:33.33333%;
         text-align: center;
         // padding:0 33px 0 33px;
@@ -148,7 +149,9 @@ body {
 
 .feature {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-right:139px;
+    padding-left:139px;
     .feature_list {
         width: 60%;
         ul {
