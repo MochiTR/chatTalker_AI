@@ -205,12 +205,24 @@ body {
   margin-top: 200px;
   margin-bottom: 100px;
 }
+@media (max-width: 375px) {
+  .plat {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
 
 .plat_h {
   width: 100%;
   text-align: center;
   font-size: 32px;
   margin-bottom: 48px;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  .plat_h {
+    font-size: 28px;
+  }
 }
 
 .plat_d {
@@ -227,24 +239,50 @@ body {
   .plat_d {
     padding-right: 0;
     padding-left: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .plat_d li {
   width: 33.33333%;
   text-align: center;
 }
+@media (max-width: 375px) {
+  .plat_d li {
+    width: 100%;
+  }
+}
 .plat_d li img {
   width: 90px;
   height: 90px;
 }
+@media (max-width: 375px) {
+  .plat_d li img {
+    height: 60px;
+    width: 60px;
+  }
+}
 .plat_d li h3 {
   font-size: 24px;
   margin: 24px 0 24px 0;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  .plat_d li h3 {
+    font-size: 18px;
+    margin: 16px 0 16px 0;
+  }
 }
 .plat_d li p {
   font-size: 16px;
   color: #747474;
   line-height: 1.4;
+}
+@media (max-width: 375px) {
+  .plat_d li p {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
 }
 
 .role {
@@ -259,15 +297,32 @@ body {
           justify-content: center;
   margin-bottom: 100px;
 }
+@media (max-width: 375px) {
+  .role {
+    margin-bottom: 60px;
+  }
+}
 .role h2 {
   font-size: 32px;
   width: 100%;
   margin-bottom: 16px;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  .role h2 {
+    font-size: 28px;
+  }
 }
 .role p {
   font-size: 20px;
   width: 100%;
   margin-bottom: 48px;
+}
+@media (max-width: 375px) {
+  .role p {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
 }
 .role .role_list {
   display: -webkit-box;
@@ -290,6 +345,11 @@ body {
           box-shadow: 1px 2px 7px #00000014;
   overflow: hidden;
 }
+@media (max-width: 375px) {
+  .role .role_list li {
+    margin: 0 0 24px 0;
+  }
+}
 .role .role_list li img {
   width: 260px;
   height: 260px;
@@ -298,6 +358,7 @@ body {
   color: #56C4C5;
   font-size: 16px;
   margin: 16px 0 16px 0;
+  font-weight: bold;
 }
 .role .role_list li p {
   font-size: 16px;
@@ -314,8 +375,25 @@ body {
   padding-right: 139px;
   padding-left: 139px;
 }
+@media (max-width: 375px) {
+  .feature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+}
 .feature .feature_list {
   width: 50%;
+}
+@media (max-width: 375px) {
+  .feature .feature_list {
+    width: 100%;
+  }
 }
 .feature .feature_list ul {
   display: -webkit-box;
@@ -324,6 +402,13 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 375px) {
+  .feature .feature_list ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .feature .feature_list ul li {
   width: 25%;
   padding: 32px 32px 48px 32px;
@@ -331,6 +416,12 @@ body {
           box-shadow: 0 2px 10px #00000014;
   margin-right: 47px;
   margin-bottom: 28px;
+}
+@media (max-width: 375px) {
+  .feature .feature_list ul li {
+    width: 50%;
+    margin: 0 0 24px 0;
+  }
 }
 .feature .feature_list ul li img {
   border-radius: 100%;
@@ -346,6 +437,7 @@ body {
   margin-top: 24px;
   margin-bottom: 16px;
   font-size: 18px;
+  font-weight: bold;
 }
 .feature .feature_text {
   width: 30%;
@@ -364,13 +456,34 @@ body {
           align-items: flex-start;
   line-height: 1.5;
 }
+@media (max-width: 375px) {
+  .feature .feature_text {
+    width: 100%;
+    margin-bottom: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .feature .feature_text h3 {
   font-size: 32px;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  .feature .feature_text h3 {
+    font-size: 28px;
+  }
 }
 .feature .feature_text p {
   font-size: 18px;
   margin-top: 16px;
   margin-bottom: 24px;
+}
+@media (max-width: 375px) {
+  .feature .feature_text p {
+    font-size: 16px;
+  }
 }
 .feature .feature_text a {
   font-size: 18px;
@@ -401,6 +514,8 @@ body {
     width: 50px;
     height: 50px;
     line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
 
@@ -411,9 +526,21 @@ body {
   padding-right: 139px;
   margin-bottom: 134px;
 }
+@media (max-width: 375px) {
+  .rate {
+    margin: 0 0 60px 0;
+    padding: 0;
+  }
+}
 .rate h3 {
   font-size: 32px;
   margin-bottom: 104px;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  .rate h3 {
+    font-size: 28px;
+  }
 }
 .rate ul {
   display: -webkit-box;
@@ -422,6 +549,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 375px) {
+  .rate ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .rate ul li {
   width: 22.6666%;
@@ -433,6 +566,12 @@ body {
   line-height: 1.4;
   position: relative;
   text-align: left;
+}
+@media (max-width: 375px) {
+  .rate ul li {
+    width: 80%;
+    margin: 0;
+  }
 }
 .rate ul li img {
   width: 80px;
@@ -467,21 +606,27 @@ body {
 .footer {
   position: relative;
   text-align: center;
+  padding-bottom: 100px;
 }
-.footer img {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 503px;
+@media (max-width: 375px) {
+  .footer {
+    padding-bottom: 60px;
+  }
 }
 .footer p {
   width: 100%;
   padding-top: 260px;
   font-size: 32px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg");
   background-position: center top;
   background-repeat: no-repeat;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  .footer p {
+    background-size: 100% auto, contain;
+    font-size: 24px;
+  }
 }
 .footer a {
   background: #56C4C5;
@@ -492,4 +637,13 @@ body {
   border-radius: 27px;
   margin-top: 48px;
   text-decoration: none;
+}
+
+.copyright {
+  background: #F5F5F5;
+  padding: 16px 0 16px 0;
+}
+.copyright p {
+  font-size: 16px;
+  text-align: center;
 }

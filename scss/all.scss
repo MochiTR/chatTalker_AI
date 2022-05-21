@@ -117,12 +117,20 @@ body {
     flex-wrap:wrap;
     margin-top:200px;
     margin-bottom:100px;
+    @include moblie {
+        margin-top:60px;
+        margin-bottom: 60px;
+    }
 }
 .plat_h {
     width:100%;
     text-align: center;
     font-size:32px;
     margin-bottom:48px;
+    font-weight: bold;
+    @include moblie {
+        font-size: 28px;
+    }
 }
 .plat_d {
     display:flex;
@@ -133,23 +141,41 @@ body {
     @include moblie {
         padding-right:0;
         padding-left: 0;
+        flex-wrap: wrap;
     }
     li{
         width:33.33333%;
         text-align: center;
         // padding:0 33px 0 33px;
+        @include moblie {
+            width: 100%;
+            
+        }
         img {
             width:90px;
             height:90px;
+            @include moblie {
+                height: 60px;
+                width: 60px;
+            }
         }
         h3 {
             font-size:24px;
             margin:24px 0 24px 0;
+            font-weight: bold;
+            @include moblie {
+                font-size: 18px;
+                margin:16px 0 16px 0;
+            }
         }
         p {
             font-size:16px;
             color:#747474;
             line-height: 1.4;
+            @include moblie {
+                font-size: 16px;
+                margin-bottom: 24px;
+            }
         }
     }
 }
@@ -160,15 +186,26 @@ body {
     flex-wrap:wrap;
     justify-content: center;
     margin-bottom: 100px;
+    @include moblie {
+        margin-bottom: 60px;
+    }
     h2 {
         font-size: 32px;
         width:100%;
         margin-bottom: 16px;
+        font-weight: bold;
+        @include moblie {
+            font-size: 28px;
+        }
     }
     p {
         font-size: 20px;
         width:100%;
         margin-bottom: 48px;
+        @include moblie {
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
     }
     .role_list {
         display:flex;
@@ -182,6 +219,9 @@ body {
             border-radius:8px;
             box-shadow:1px 2px 7px #00000014;
             overflow: hidden;
+            @include moblie {
+                margin:0 0 24px 0;
+            }
     
             img {
                 width: 260px;
@@ -191,6 +231,7 @@ body {
                 color:#56C4C5;
                 font-size:16px;
                 margin:16px 0 16px 0;
+                font-weight: bold;
             }
             p {
                 font-size:16px;
@@ -205,17 +246,33 @@ body {
     justify-content: center;
     padding-right:139px;
     padding-left:139px;
+    @include moblie {
+        flex-direction: column-reverse;
+        flex-wrap:wrap;
+        padding:0;
+        margin-bottom:60px;
+    }
     .feature_list {
         width: 50%;
+        @include moblie {
+            width: 100%;
+        }
         ul {
         display:flex;
         flex-wrap:wrap;
+        @include moblie {
+            justify-content: center;
+        }
         li {
             width:25%;
             padding:32px 32px 48px 32px;
             box-shadow: 0 2px 10px #00000014;
             margin-right:47px;
             margin-bottom:28px;
+            @include moblie {
+                width: 50%;
+                margin:0 0 24px 0;
+            }
             img {
                 border-radius: 100%;
                 box-shadow: 0px 2px 10px #00000014;
@@ -229,6 +286,7 @@ body {
                 margin-top:24px;
                 margin-bottom:16px;
                 font-size: 18px;
+                font-weight: bold;
             }
         }
     }
@@ -240,13 +298,26 @@ body {
         justify-content: center;
         align-items: flex-start;
         line-height: 1.5;
+        @include moblie {
+            width: 100%;
+            margin-bottom: 32px;
+            align-items: center;
+            text-align: center;
+        }
         h3 {
             font-size:32px;
+            font-weight: bold;
+            @include moblie {
+                font-size: 28px;
+            }
         }
         p {
             font-size:18px;
             margin-top:16px;
             margin-bottom: 24px;
+            @include moblie {
+                font-size: 16px;
+            }
         }
         a {
             font-size:18px;
@@ -278,6 +349,8 @@ body {
         width: 50px;
         height: 50px;
         line-height:50px;
+        right:16px;
+        bottom: 16px;
     }
 }
 
@@ -287,13 +360,24 @@ body {
     padding-left: 139px;
     padding-right: 139px;
     margin-bottom: 134px;
+    @include moblie {
+        margin: 0 0 60px 0;
+        padding: 0;
+    }
     h3 {
         font-size: 32px;
         margin-bottom: 104px;
+        font-weight: bold;
+        @include moblie {
+            font-size: 28px;
+        }
     }
     ul{
         display:flex;
         justify-content: center;
+        @include moblie {
+            flex-wrap:wrap;
+        }
         li{
             width:22.6666%;
             // max-width:352px;
@@ -305,6 +389,10 @@ body {
             line-height: 1.4;
             position:relative;
             text-align: left;
+            @include moblie {
+                width: 80%;
+                margin: 0;
+            }
             img {
                 width: 80px;
                 height: 80px;
@@ -341,22 +429,30 @@ body {
 .footer {
     position: relative;
     text-align: center;
-
-    img {
-        width: 100%;
-        position: absolute;
-        bottom:0;
-        left: 0;
-        width:100%;
-        height: 503px;
-        }
+    padding-bottom: 100px;
+    @include moblie {
+        padding-bottom: 60px;
+    }
+    // img {
+    //     width: 100%;
+    //     position: absolute;
+    //     bottom:0;
+    //     left: 0;
+    //     width:100%;
+    //     height: 503px;
+    //     }
     p {
         width: 100%;
         padding-top:260px;
         font-size: 32px;
-        // background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg');
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg');
         background-position: center top;
         background-repeat: no-repeat;
+        font-weight: bold;
+        @include moblie {
+            background-size: 100% auto ,contain;
+            font-size: 24px;
+        }
     }
     a {
         background: #56C4C5;
@@ -367,5 +463,13 @@ body {
         border-radius: 27px;
         margin-top: 48px;
         text-decoration: none;
+    }
+}
+.copyright {
+    background: #F5F5F5;
+    padding:16px 0 16px 0;
+    p{
+        font-size: 16px;
+        text-align: center;
     }
 }
