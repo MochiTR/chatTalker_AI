@@ -49,18 +49,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
-}
-@media (max-width: 375px) {
-  body {
-    background-image: url("");
-  }
-}
-
 *, *::brfore, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -191,6 +179,58 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
   }
+}
+
+.totop {
+  width: 71px;
+  height: 71px;
+  border-radius: 100%;
+  background: #56C4C5;
+  color: white;
+  line-height: 71px;
+  text-align: center;
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+}
+.totop:hover {
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .totop {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+.copyright {
+  background: #F5F5F5;
+  padding: 16px 0 16px 0;
+}
+.copyright p {
+  font-size: 16px;
+  text-align: center;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+@media (max-width: 375px) {
+  body {
+    background-image: url("");
+  }
+}
+
+*, *::brfore, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
 }
 
 .plat {
@@ -494,31 +534,6 @@ body {
   text-decoration: none;
 }
 
-.totop {
-  width: 71px;
-  height: 71px;
-  border-radius: 100%;
-  background: #56C4C5;
-  color: white;
-  line-height: 71px;
-  text-align: center;
-  position: fixed;
-  right: 50px;
-  bottom: 30px;
-}
-.totop:hover {
-  cursor: pointer;
-}
-@media (max-width: 375px) {
-  .totop {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    right: 16px;
-    bottom: 16px;
-  }
-}
-
 .rate {
   margin-top: 100px;
   text-align: center;
@@ -637,13 +652,4 @@ body {
   border-radius: 27px;
   margin-top: 48px;
   text-decoration: none;
-}
-
-.copyright {
-  background: #F5F5F5;
-  padding: 16px 0 16px 0;
-}
-.copyright p {
-  font-size: 16px;
-  text-align: center;
 }
