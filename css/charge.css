@@ -54,6 +54,10 @@ table {
   border: 1px solid black;
 }
 
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 .container {
   padding: 0 107px 0 107px;
 }
@@ -214,11 +218,186 @@ table {
   text-align: center;
 }
 
+.container {
+  padding: 0 3px 0 3px;
+}
 .headerContain {
   background: #F7F9FD;
   border-bottom-left-radius: 300px;
+  position: relative;
+  padding: 24px 139px 0 139px;
 }
 .headerContain img {
-  width: 995px;
+  width: 885px;
   height: 559px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.headerContent .sub {
+  padding-bottom: 180px;
+}
+
+.plan {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.plan .plan_h {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+.plan .plan_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.plan .plan_price li a {
+  border: 1px solid #56C4C5;
+  padding: 12px 32px;
+  font-size: 18px;
+  margin-right: 16px;
+  border-radius: 27px;
+  text-decoration: none;
+  color: #56C4C5;
+  display: block;
+}
+.plan .plan_price li a:active, .plan .plan_price li a.def {
+  background: #56C4C5;
+  color: white;
+}
+.plan .plan_d {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 48px 231px;
+}
+.plan .plan_d .plan_t {
+  padding: 10px 29px;
+  width: 50%;
+  -webkit-box-shadow: 0 2px 10px #00000014;
+          box-shadow: 0 2px 10px #00000014;
+  border-radius: 12px;
+}
+.plan .plan_d .plan_t h3 {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+.plan .plan_d .plan_t p {
+  line-height: 1.5;
+}
+.plan .plan_d .plan_t .plan_s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 32px 0;
+}
+.plan .plan_d .plan_t .plan_s .s_m {
+  padding: 24px 32px;
+  background: #F5F5F5;
+}
+.plan .plan_d .plan_t .plan_s p {
+  font-size: 29px;
+}
+.plan .plan_d .plan_t .plan_s span {
+  font-size: 12px;
+}
+.plan .plan_d .plan_t .plan_s span p {
+  font-size: 32px;
+}
+.plan .plan_d .plan_t .plan_s span p span {
+  font-size: 12px;
+  font-weight: bold;
+}
+.plan .plan_d .plan_t .plan_s span .member {
+  color: #56C4C5;
+}
+.plan .plan_d .plan_t .p_d {
+  text-align: left;
+  margin: 0 0 32px 32px;
+}
+.plan .plan_d .plan_t .p_d li {
+  margin-bottom: 16px;
+}
+.plan .plan_d .plan_t .p_d li img {
+  margin-right: 13px;
+}
+.plan .plan_d .plan_t a {
+  border: 1px solid #56C4C5;
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: 27px;
+  text-decoration: none;
+  color: #56C4C5;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+.plan .plan_d .plan_t a:active, .plan .plan_d .plan_t a.def {
+  background: #56C4C5;
+  color: white;
+}
+
+.qa {
+  margin-bottom: 100px;
+}
+.qa h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.qa ul {
+  padding: 0 231px;
+}
+.qa ul li {
+  padding: 16px 32px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 2px 10px #00000014;
+          box-shadow: 0 2px 10px #00000014;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.qa ul li a {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_plus.svg");
+  background-position: center;
+  float: right;
+  clear: both;
+}
+.qa ul .more_li {
+  color: #56C4C5;
+}
+.qa ul .more_li ul {
+  margin-top: 24px;
+  padding: 0;
+}
+.qa ul .more_li ul li {
+  color: #747474;
+  padding: 0;
+  line-height: 1.7;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.qa ul .more_li .more {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_minus.svg");
+  background-repeat: no-repeat;
 }

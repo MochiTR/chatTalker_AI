@@ -1,11 +1,183 @@
 @import "reset";
 @import "layout";
 
+
+.container {
+    padding:0 3px 0 3px;
+    @include moblie {
+      
+    }
+}
 .headerContain {
     background: #F7F9FD;
     border-bottom-left-radius: 300px;
+    position: relative;
+    padding:24px 139px 0 139px;
     img {
-        width: 995px;
+        width: 885px;
         height: 559px;
+        position:absolute;
+        top:0;
+        right:0;
+    }
+   
+}
+.headerContent {
+    .sub{
+        padding-bottom: 180px;
+    }
+}
+.plan {
+    margin-top:100px;
+    margin-bottom: 100px;
+    text-align: center;
+    .plan_h {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 48px;
+    }
+    .plan_price {
+        display: flex;
+        justify-content: center;
+        li{
+            a{
+                border:1px solid #56C4C5;
+                padding:12px 32px;
+                font-size: 18px;
+                margin-right: 16px;
+                border-radius: 27px;
+                text-decoration: none;
+                color:#56C4C5;
+                display: block;
+                &:active,&.def  {
+                    background: #56C4C5;
+                    color: white;
+                }
+            }
+        }
+
+    }
+    .plan_d {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin:48px 231px;
+        .plan_t {
+            padding:10px 29px;
+            width: 50%;
+            box-shadow: 0 2px 10px #00000014;
+            border-radius:12px;
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+                border-bottom: 1px solid #DDDDDD;
+                padding-bottom: 16px;
+                margin-bottom: 32px;
+            }
+            p {
+                line-height: 1.5;
+            }
+            .plan_s {
+                display:flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 32px 0;
+
+                .s_m {
+                    padding:24px 32px;
+                    background: #F5F5F5;
+                }
+                p {
+                    font-size: 29px;
+ 
+                }
+                span {
+                    font-size: 12px;
+                    p{
+                        font-size: 32px;
+
+                        span {
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                    }
+                    .member {
+                        color:#56C4C5;
+                    }
+                }
+            }
+            .p_d {
+                text-align: left;
+                margin: 0 0 32px 32px;
+                li {
+                    margin-bottom: 16px;
+                    img{
+                        margin-right: 13px;
+                    }
+                }
+            }
+            a {
+                border:1px solid #56C4C5;
+                padding:12px 32px;
+                font-size: 18px;
+                border-radius: 27px;
+                text-decoration: none;
+                color:#56C4C5;
+                display: inline-block;
+                margin-bottom: 32px;
+                &:active,&.def {
+                    background: #56C4C5;
+                    color: white;
+                }
+            }
+        }
+
+    }
+   
+}
+
+.qa {
+    margin-bottom: 100px;
+    h3{
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    ul {
+        padding:0 231px;
+        li{
+            padding:16px 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #00000014;
+            font-size: 18px;
+            margin-bottom: 16px;
+            a{
+                width: 20px;
+                height: 20px;
+                background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_plus.svg');
+                background-position: center;
+                float: right;
+                clear: both;
+            }
+        }
+        .more_li {
+            color:#56C4C5;
+            ul {
+                margin-top: 24px;
+                padding:0;
+                li {
+                    color:#747474;
+                    padding: 0;
+                    line-height: 1.7;
+                    box-shadow: none;
+                }
+            }
+
+            .more{
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_minus.svg');
+            background-repeat: no-repeat;
+        }
+        }
     }
 }

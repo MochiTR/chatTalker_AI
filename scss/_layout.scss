@@ -10,7 +10,9 @@
     }
 }
 
-
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
 .container {
     padding:0 107px 0 107px;
     @include moblie {
