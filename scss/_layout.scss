@@ -1,7 +1,7 @@
-
 *,*::brfore,*::after {
     box-sizing:border-box;
     border:1px solid black;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 @mixin moblie {
@@ -10,9 +10,7 @@
     }
 }
 
-body {
-    font-family: 'Noto Sans TC', sans-serif;
-}
+
 .container {
     padding:0 107px 0 107px;
     @include moblie {
@@ -113,6 +111,7 @@ body {
     position:fixed;
     right:50px;
     bottom:30px;
+    z-index: 999;
     &:hover {
         cursor: pointer;
     }

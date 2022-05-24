@@ -457,8 +457,9 @@ body {
         padding-top:260px;
         font-size: 32px;
         background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg');
-        background-position: center top;
+        background-position: top;
         background-repeat: no-repeat;
+        background-size: contain;
         font-weight: bold;
         @include moblie {
             background-size: 100% auto ,contain;
