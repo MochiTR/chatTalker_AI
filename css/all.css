@@ -461,6 +461,14 @@ body {
   margin-right: 47px;
   margin-bottom: 28px;
 }
+.feature .feature_list ul li .fl_p {
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  position: relative;
+}
 @media (max-width: 375px) {
   .feature .feature_list ul li {
     width: 50%;
@@ -468,10 +476,12 @@ body {
   }
 }
 .feature .feature_list ul li img {
-  border-radius: 100%;
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
-  padding: 15px 15px;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .feature .feature_list ul li p {
   font-size: 16px;
