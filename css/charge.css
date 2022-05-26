@@ -216,6 +216,19 @@ table {
   text-align: center;
 }
 
+body {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: -200px 50%;
+  background-size: 15%;
+}
+@media (max-width: 375px) {
+  body {
+    background-position: -100px 55%;
+    background-size: 60%;
+  }
+}
+
 .container {
   padding: 0 3px 0 3px;
 }
