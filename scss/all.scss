@@ -18,7 +18,10 @@ body {
     // background: 
             // url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg") no-repeat center bottom / contain ;
     @include moblie {
-    background-image: url('');
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg'),url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg'),url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg');
+    background-size: 40%;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: -110px 11%,130% 48%,-54px 77%;
     }
     }
 *,*::brfore,*::after {
