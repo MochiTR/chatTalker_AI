@@ -315,6 +315,7 @@ body {
 @media (max-width: 768px) {
   body {
     background-size: 80%, auto, auto, auto;
+    background-position: right top, -200px 25%, 130% 52%, -60px 76%;
   }
 }
 @media (max-width: 375px) {

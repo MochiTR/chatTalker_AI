@@ -82,6 +82,7 @@ body {
             // url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg") no-repeat center bottom / contain ;
     @include tablet{
         background-size: 80%,auto,auto,auto;
+        background-position: right top,-200px 25%,130% 52%,-60px 76%;
                    }
     @include moblie {
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg'),url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg'),url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg');

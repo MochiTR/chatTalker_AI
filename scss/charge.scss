@@ -6,6 +6,10 @@ body{
     background-repeat: no-repeat;
     background-position: -200px 50%;
     background-size: 15%;
+    @include tablet {
+        background-position: -100px 50%;
+        background-size: 30%;
+    }
     @include moblie {
         background-position: -100px 55%;
         background-size: 60%;
@@ -22,6 +26,9 @@ body{
     border-bottom-left-radius: 300px;
     position: relative;
     padding:24px 139px 0 139px;
+    @include tablet {
+        padding: 10px;
+    }
     @include moblie {
         padding: 0;
     }
@@ -31,6 +38,10 @@ body{
         position:absolute;
         top:0;
         right:0;
+        @include tablet {
+            width:500px;
+            height:300px;
+        }
         @include moblie {
             display: none;
         }
@@ -111,6 +122,10 @@ body{
         display: flex;
         justify-content: center;
         margin:48px 231px;
+        @include tablet {
+            margin:50px 0 0 0;
+            flex-wrap: wrap;
+        }
         @include moblie{
             flex-wrap:wrap;
             margin: 0;
@@ -120,6 +135,9 @@ body{
             width: 50%;
             box-shadow: 0 2px 10px #00000014;
             border-radius:12px;
+            @include tablet {
+                margin-bottom:30px;
+            }
             @include moblie{
                 flex-wrap:wrap;
                 width:100%;
@@ -221,6 +239,9 @@ body{
     }
     ul {
         padding:0 231px;
+        @include tablet {
+            padding: 0;
+        }
         @include moblie{
             display: flex;
             flex-wrap:wrap;
@@ -232,6 +253,7 @@ body{
             box-shadow: 0 2px 10px #00000014;
             font-size: 18px;
             margin-bottom: 16px;
+
             @include moblie{
                 width: 100%;
 
