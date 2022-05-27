@@ -217,6 +217,72 @@ table {
   text-align: center;
 }
 
+.swiper {
+  width: 335PX;
+  height: 304px;
+  display: none;
+  --swiper-pagination-color: #FFD153;
+}
+@media (max-width: 375px) {
+  .swiper {
+    display: block !important;
+  }
+}
+.swiper .swiper-wrapper .swiper-slide {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  font-size: 16px;
+  line-height: 1.4;
+  position: relative;
+  text-align: left;
+}
+.swiper .swiper-wrapper .swiper-slide .underline {
+  padding: 100px 17px 48px 10px;
+}
+.swiper .swiper-wrapper .swiper-slide p {
+  padding-left: 17px;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+.swiper .swiper-wrapper .swiper-slide .underline::after {
+  content: "";
+  background-color: #DDDDDD;
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  height: 1px;
+  text-decoration: underline;
+}
+.swiper .swiper-wrapper .swiper-slide .company {
+  font-weight: bold;
+}
+.swiper .swiper-wrapper .swiper-slide span {
+  float: right;
+}
+.swiper .swiper-wrapper .swiper-slide span i {
+  color: #F5CA52;
+  margin-right: 5px;
+}
+
+.rate_title {
+  display: none;
+}
+@media (max-width: 375px) {
+  .rate_title {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
 body {
   font-family: "Noto Sans TC", sans-serif;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
@@ -230,7 +296,7 @@ body {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
     background-size: 40%;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: -110px 11%, 130% 48%, -54px 77%;
+    background-position: -110px 12%, 130% 54%, -54px 85%;
   }
 }
 
@@ -562,6 +628,7 @@ body {
   .rate {
     margin: 0 0 60px 0;
     padding: 0;
+    display: none;
   }
 }
 .rate h3 {
@@ -581,12 +648,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media (max-width: 375px) {
-  .rate ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 .rate ul li {
   width: 22.6666%;
