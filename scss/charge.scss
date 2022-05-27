@@ -71,9 +71,12 @@ body{
         display: flex;
         justify-content: center;
         @include moblie{
-            flex-wrap:wrap;
+            // flex-wrap:wrap;
+            overflow-x:auto;
+
         }
         li{
+
             a{
                 border:1px solid #56C4C5;
                 padding:12px 32px;
@@ -86,6 +89,18 @@ body{
                 &:active,&.def  {
                     background: #56C4C5;
                     color: white;
+                }
+                @include moblie{
+                    font-size: 16px;
+                    padding: 8px 0px;
+                    margin-right: 6px;
+                    width: 90px;
+                    height: 20px;
+                }
+                &.def {
+                    @include moblie{
+                        margin-left: 150px;
+                    }
                 }
             }
         }
